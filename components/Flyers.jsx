@@ -17,9 +17,11 @@ const Flyers = () => {
 
       <section className='hidden xl:inline-grid md:col-span-1'>
         {/* MiniProfile */}
-        <MiniProfile/>
-        {/* Suggestion */}
-        <Suggestions/>
+        <div className="fixed top-30">
+          <MiniProfile/>
+          {/* Suggestion */}
+          <Suggestions/>
+        </div>
       </section>
     </main>
   )
