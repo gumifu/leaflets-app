@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className='bg-gradient-to-br from-blue-900 to-gray-900 h-screen overflow-y-scroll scrollbar-hide'>
       <Head>
-        <title>leaflet's</title>
-        <meta name="description" content="Leaflet's app by create next app" />
+        <title>leaflets</title>
+        <meta name="description" content="Leaflets app by create next app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* header */}
