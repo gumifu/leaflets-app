@@ -9,5 +9,22 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
     // ...add more providers here
-  ],
+    ],
+    // theme: {
+  //   logo: '/logo-main-white.svg',
+  //   brandColor: '#F13287',
+  //   colorScheme:'auto',
+  // },
+    pages: {
+        signIn:"/auth/signin",
+  },
+   callbacks: {
+     async session({ session, token, user }) {
+      //  usernameの生成
+        session.user.username = session.user.name.split(" ").join("").toLocaleLowerCase();
+        //uidの生成
+        session.user.uid = token.sub;
+        return session;
+      },
+  },
 })
