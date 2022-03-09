@@ -16,10 +16,10 @@ import { HomeIcon, UserCircleIcon } from '@heroicons/react/solid';
 
 const Header = () => {
   return (
-          <div className='shadow-xl border-b sticky top-0 z-50'>
-      <div className='flex items-center justify-between m-w-6xl bg-black'>
+          <div className='  sticky top-10 m-5 z-50 '>
+      <div className='flex shadow-xl shadow-gray-800 items-center justify-between m-w-6xl bg-black rounded-full bg-opacity-20'>
           {/* left */}
-          <div className=" relative w-24 h-24 hidden lg:inline-grid cursor-pointer">
+          <div className=" relative w-24 h-24 hidden lg:inline-grid cursor-pointer ">
             <Image src='/logo-main-white.svg' layout='fill' className='' objectFit='contain'/>
           </div>
           <div className=" relative w-16 h-16 lg:hidden flex-shrink-0 cursor-pointer">

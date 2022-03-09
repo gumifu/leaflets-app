@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 export default function Home() {
   return (
-    <div className=''>
+    <div className='bg-gradient-to-br from-blue-900 to-gray-900 h-screen overflow-y-scroll scrollbar-hide'>
       <Head>
         <title>leaflet's</title>
         <meta name="description" content="Leaflet's app by create next app" />
@@ -15,7 +15,6 @@ export default function Home() {
       {/* feed */}
       <Flyers/>
       {/* modal */}
-
 
       {/* <main className={styles.main}>
 
